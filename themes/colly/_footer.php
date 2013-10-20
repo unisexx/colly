@@ -1,0 +1,1 @@
+<div id="footer" style="margin-top:25px;"><img src="themes/colly/images/name_company2.png" width="586" height="70" style="padding-top:15px;"></div>

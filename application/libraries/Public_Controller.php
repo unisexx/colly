@@ -6,8 +6,8 @@ class Public_Controller extends Master_Controller
 		parent::__construct();
 		
 		header('Content-type: text/html; charset=UTF-8');
-		$this->template->title('สมาคมนายหน้าอสังหาริมทรัพย์ไทย');
-		$this->template->set_theme('treba');
+		$this->template->title('Collycollage');
+		$this->template->set_theme('colly');
     	$this->template->set_layout('layout');
 		
 		// Set js
