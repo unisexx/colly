@@ -11,14 +11,14 @@ class Albums extends Admin_Controller
 		$data['albums'] = new Album;
 		$data['albums']->order_by('id','desc')->get_page();
 		//$data['albums']->where('agency_id',$_GET['agency_id'])->order_by('id','desc')->get_page();
-		$this->template->build('admin/album_index',$data);
+		$this->template->build('admin/index',$data);
 	}
 	
 	function form($id = NULL)
 	{	
 		$data['album'] = new Album($id);
 		$this->template->append_metadata(js_lightbox());
-		$this->template->build('admin/album_form',$data);	
+		$this->template->build('admin/form',$data);	
 	}
 	
 	function save($id=FALSE)

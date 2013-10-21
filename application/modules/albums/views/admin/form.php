@@ -111,7 +111,7 @@ ul.list-icon li{float:left;}
 				<input type="text" name="name" value="<?php echo $album->name ?>" class="full" /> <input type="button" name="image_add" value="เพิ่มรูปภาพ" />
 			</td>
 		</tr>
-		<tr>
+		<!-- <tr>
 			<th>ลายน้ำ</th>
 			<td><?php echo form_icon('watermark', 'watermark'); ?></td>
 		</tr>
@@ -123,7 +123,7 @@ ul.list-icon li{float:left;}
 				<?php echo form_radio('position', 'BL').'ล่างซ้าย'; ?>
 				<?php echo form_radio('position', 'BR', 'BR').'ล่างขวา'; ?>
 			</td>
-		</tr>
+		</tr> -->
 		<?php foreach($album->picture as $picture): ?>
 		<tr>
 			<th>รูปภาพ </th>

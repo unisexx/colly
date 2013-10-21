@@ -130,4 +130,17 @@ function form_back($name = 'back')
 {
 	return form_button($name,'ย้อนกลับ','onclick="window.location = \''.$_SERVER['HTTP_REFERER'].'\'"');
 }
+
+function form_icon($name, $type, $selected = FALSE)
+{
+    get_instance()->load->helper('directory');
+    $html = '<ul class="list-icon">';
+    foreach(directory_map('uploads/icon/'.$type.'/', FALSE, TRUE) as $icon)
+    {
+        if(is_file('uploads/icon/'.$type.'/'.$icon))
+        $html .= '<li>'.img('uploads/icon/'.$type.'/'.$icon).'<br />'.form_radio($name, $icon, $selected).'</li>';
+    }
+    $html .= '</ul>';
+    return $html;
+}
 ?>
