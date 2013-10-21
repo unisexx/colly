@@ -1,7 +1,7 @@
 <?php
-class Member extends ORM {
+class Agent extends ORM {
 
-    var $table = 'members';
+    var $table = 'agents';
 	
 	var $has_one = array('user','category');
 

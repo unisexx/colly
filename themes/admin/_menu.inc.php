@@ -4,8 +4,8 @@
     <!-- <li <?php echo menu_active('coverpages','coverpages')?> ><a href="coverpages/admin/coverpages">หน้าแรก</a></li> -->
     <li <?php echo menu_active('hilights','hilights')?>><a href="hilights/admin/hilights">ไฮไลท์</a></li>
     <li <?php echo menu_active('products','products')?>><a href="products/admin/products">ผลิตภัณฑ์</a></li>
-    <!-- <li <?php echo menu_active('abouts','abouts')?>><a href="abouts/admin/abouts">เกี่ยวกับสมาคม</a></li>
-    <li <?php echo menu_active('members','members')?>><a href="members/admin/members">เกี่ยวกับสมาชิก</a></li> -->
+    <!-- <li <?php echo menu_active('abouts','abouts')?>><a href="abouts/admin/abouts">เกี่ยวกับสมาคม</a></li> -->
+    <li <?php echo menu_active('agents','agents')?>><a href="agents/admin/agents">ตัวแทนจำหน่าย</a></li>
     <li <?php echo menu_active('bnews','bnews')?>><a href="bnews/admin/bnews">ข่าวสาร</a></li>
     <!-- <li <?php echo menu_active('downloads','downloads')?>><a href="downloads/admin/downloads">ดาวน์โหลดเอกสาร</a></li>
     <li <?php echo menu_active('links','links')?>><a href="links/admin/links">ลิ้งค์ข้อความ</a></li>
