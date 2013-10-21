@@ -22,40 +22,10 @@
         <div class="arrow_right"><a href="#"><img src="themes/colly/images/arrow_right.png" border="0"></a></div>
     <div class="clr"></div>
         <?php echo modules::run('products/inc_home'); ?>
-      <div id="products_recomment">
-        <img src="themes/colly/images/title_product.png" width="160" height="28" class="title_product"><div class="line">&nbsp;</div>
-        
-          <ul>
-              <li><a href="#"><img src="themes/colly/images/pic_product01.jpg" width="280" height="170" border="0"><br>
-              <img src="themes/colly/images/textpic_product01.png" width="251" height="27" border="0" class="img_textproduct"></a></li>
-              <li><a href="#"><img src="themes/colly/images/pic_product02.jpg" width="280" height="170" border="0"><br/>
-              <img src="themes/colly/images/textpic_product02.png" width="257" height="27" border="0" class="img_textproduct"></a></li>
-              <li><a href="#"><img src="themes/colly/images/pic_product03.jpg" width="280" height="170" border="0"><br>
-              <img src="themes/colly/images/textpic_product03.png" width="255" height="27" border="0" class="img_textproduct"></a></li>
-          </ul>
-      </div>
         <br>
         <div class="clr"></div>
         
-        <div id="newsupdate">
-            <img src="themes/colly/images/title_newsupdate.png" width="153" height="23" class="title_product">
-            <div class="line">&nbsp;</div>
-          <div class="btn_more">&nbsp;</div>
-        </div>
-        <div class="clr"></div>
-<div id="news">
-          <ul>
-              <li><a href="#"><img src="themes/colly/images/pic_newsupdate01.jpg" width="188" height="100" border="0" class="img_news"></a>
-              <div class="boxtextnews"><span class="dateNews">09.09.2013</span><br><span class="h_textNews">วันสุดท้ายแล้ว กับ Meet The Star Roadshow</span><br><a href="#" class="textNews" >Meet The Star Roadshow แจกแหลกก ทั้งเกมส์ และ ชิงโชค และ โปร 1 แถม 1 พิเศษ สุด ๆ วันนี้ 
-แขกรับเชิญ วันนี้ แทค ภรัณญู กรี้ด ๆ ๆ หล่อ ล่ำ แบดบอย พบกันได้ที่เซ็นทรัล แจ้งวัฒนะ</a></div></li>
-              <li><a href="#"><img src="themes/colly/images/pic_newsupdate02.jpg" width="188" height="100" border="0" class="img_news"></a>
-              <div class="boxtextnews"><span class="dateNews">08.09.2013</span><br>
-          <span class="h_textNews">กิจกรรมแจก Divoi 30 ml กติกา ง่าย ๆ</span><br><a href="#" class="textNews">แจก Divoi 30 ml กติกา ง่าย ๆ แค่ทายชื่อ Presenter Divoi Serum แล้วกดแชร์รูปนี้ ให้เพื่อน ๆ กด Like ให้ได้มากที่สุด 10 ท่านแรก รับไปเลย Divoi 30 ml วันนี้ - 11 กันยายน</a></div></li>
-              <li><a href="#"><img src="themes/colly/images/pic_newsupdate03.jpg" width="188" height="100" border="0" class="img_news"></a>
-              <div class="boxtextnews"><span class="dateNews">07.09.2013</span><br>
-            <span class="h_textNews">ใครอยากได้ของฟรีฟังทางนี้ 6 กันยายนนี้</span><br><a href="#" class="textNews">ของฟรีฟังทางนี้ 6 กันยายนนี้ มีกิจกรรมแจกแน่ แจกจริง Colly ใจดีอยู่แร้วว รอติดตามและร่วมสนุกได้ที่นี่</a></div></li>
-          </ul>
-         </div>
+        <?php echo modules::run('bnews/inc_home'); ?>
          
       <div id="fb"><img src="themes/colly/images/fb.jpg" width="286" height="351" /></div>
         <div class="clr"></div>
