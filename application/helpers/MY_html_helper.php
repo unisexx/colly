@@ -306,4 +306,28 @@ function meta_description($description=false){
         $CI->template->append_metadata( meta('description','อัพเดทข่าวสาร ความเคลื่อนไหว k-pop ข่าวบันเทิงเกาหลี เพลงเกาหลี ซีรีย์เกาหลี มิวสิควีดีโอเกาหลี ชาร์ตเพลงเกาหลี นักร้องเกาหลี ศิลปินเกาหลี วาไรตี้เกาหลี ใหม่ล่าสุด'));
     }
 }
+
+function remove_dir($dir) 
+{ 
+    if(is_dir($dir)) 
+    { 
+        $dir = (substr($dir, -1) != "/")? $dir."/":$dir; $openDir = opendir($dir); 
+        while($file = readdir($openDir)) 
+        { 
+            if(!in_array($file, array(".", ".."))) 
+            { 
+                if(!is_dir($dir.$file)) 
+                { 
+                    @unlink($dir.$file); 
+                } 
+                else 
+                { 
+                remove_dir($dir.$file); 
+                } 
+            } 
+        } 
+        closedir($openDir); @rmdir($dir); 
+    } 
+} 
+
 ?>

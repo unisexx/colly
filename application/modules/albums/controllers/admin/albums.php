@@ -54,7 +54,7 @@ class Albums extends Admin_Controller
 			
 			set_notify('success', lang('save_data_complete'));
 		}
-		redirect('albums/admin/albums/form/'.$album->id.'?agency_id='.$_POST['agency_id']);
+		redirect('albums/admin/albums/form/'.$album->id);
 	}
 	
 	function delete($id)
@@ -75,8 +75,8 @@ class Albums extends Admin_Controller
 		if($id)
 		{
 			$picture = new Picture($id);
-			$picture->delete_file('uploads/albums/'.$album->id,'image');
-			$picture->delete_file('uploads/albums/thumbnail/'.$album->id,'image');
+			// $picture->delete_file('uploads/albums/'.$album->id,'image');
+			// $picture->delete_file('uploads/albums/thumbnail/'.$album->id,'image');
 			$picture->delete();
 		}
 	}
