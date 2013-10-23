@@ -27,6 +27,7 @@ class Albums extends Admin_Controller
 		{
 			$album = new Album($id);
 			$album->user_id = $this->session->userdata('id');
+            $_POST['name'] = lang_encode($_POST['name']);
 			$album->from_array($_POST);
 			$album->save();
 			
@@ -36,15 +37,15 @@ class Albums extends Admin_Controller
 					$picture = new Picture(@$_POST['picture_id'][$key]);
 					if($image['name'])
 					{
-						if(@$_POST['picture_id'][$key])
-						{
-							$picture->delete_file('uploads/albums/'.$album->id,'image');
-							$picture->delete_file('uploads/albums/thumbnail/'.$album->id,'image');
-						}
-						if(@$_POST['watermark'])
-						{
-							$picture->watermark($_POST['watermark'], $_POST['position']);
-						}
+						// if(@$_POST['picture_id'][$key])
+						// {
+							// $picture->delete_file('uploads/albums/'.$album->id,'image');
+							// $picture->delete_file('uploads/albums/thumbnail/'.$album->id,'image');
+						// }
+						// if(@$_POST['watermark'])
+						// {
+							// $picture->watermark($_POST['watermark'], $_POST['position']);
+						// }
 						$picture->image = $picture->upload($image,'uploads/albums/'.$album->id);
 						$picture->thumb('uploads/albums/'.$album->id.'/thumbnail',275,180);	
 						$picture->album_id = $album->id;

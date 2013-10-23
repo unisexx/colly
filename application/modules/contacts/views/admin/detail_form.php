@@ -4,7 +4,7 @@
 <script type="text/javascript">
 tiny('detail[th],detail[en]');
 $(function(){
-    $("[rel=en]").hide();
+    $("[rel=en],[rel=cn]").hide();
     $(".lang a").click(function(){
         $("[rel=" + $(this).attr("href") + "]").show().siblings().hide();
         $(this).addClass('active').siblings().removeClass('active');
@@ -16,7 +16,7 @@ $(function(){
 <?php require_once '_menu.php';?><br clear="all">
 <form id="frmMain" method="post" action="contacts/admin/contact_details/save/<?php echo $contact->id?>" enctype="multipart/form-data">
     <table class="form">
-        <tr class="trlang"><th></th><td class="lang"><a href="th" class="active flag th">ไทย</a><a href="en" class="flag en">อังกฤษ</a></td></tr>
+        <tr class="trlang"><th></th><td class="lang"><a href="th" class="active flag th">ไทย</a><a href="en" class="flag en">อังกฤษ</a><a href="cn" class="flag cn">จีน</a></td></tr>
         <tr>
             <th>ชื่อเรื่อง :</th>
             <td>

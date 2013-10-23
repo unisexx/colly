@@ -12,7 +12,7 @@
 	</tr>
 	<?php foreach($albums as $album): ?>
 	<tr <?php echo cycle()?>>
-		<td><?php echo $album->name?></td>
+		<td><?php echo lang_decode($album->name)?></td>
 		<td><?php echo $album->user->display?></td>
 		<td>
 			<?php if(permission('galleries', 'update')):?>

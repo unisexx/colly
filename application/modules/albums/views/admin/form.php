@@ -3,6 +3,13 @@ ul.list-icon li{float:left;}
 </style>
 <script type="text/javascript">
 	$(function(){
+	    $("[rel=en],[rel=cn]").hide();
+        $(".lang a").click(function(){
+            $("[rel=" + $(this).attr("href") + "]").show().siblings().hide();
+            $(this).addClass('active').siblings().removeClass('active');
+            return false;
+        })
+    
 		$('select[name=album_category_id]').attr('disabled','');
 		$('input[name=image_add]').click(function(){
 			$('.form tr:last').before('<tr><th>รูปภาพ </th><td><input type="file" name="image[]" /></td></tr>');
@@ -89,6 +96,7 @@ ul.list-icon li{float:left;}
 <h1 style="margin:0 0 15px;">อัลบั้ม</h1>
 <form method="post" action="albums/admin/albums/save/<?php echo $album->id?>" enctype="multipart/form-data">
 	<table class="form">
+	    <tr class="trlang"><th></th><td class="lang"><a href="th" class="active flag th">ไทย</a><a href="en" class="flag en">อังกฤษ</a><a href="cn" class="flag cn">จีน</a></td></tr>
 		<!--
 		<tr>
 			
@@ -108,8 +116,14 @@ ul.list-icon li{float:left;}
 		<tr>
 			<th>อัลบั้ม</th>
 			<td>
-				<input type="text" name="name" value="<?php echo $album->name ?>" class="full" /> <input type="button" name="image_add" value="เพิ่มรูปภาพ" />
+                <input rel="th" type="text" name="name[th]" value="<?php echo lang_decode($album->name,'th')?>" class="full" />
+                <input rel="en" type="text" name="name[en]" value="<?php echo lang_decode($album->name,'en')?>" class="full" />
+                <input rel="cn" type="text" name="name[cn]" value="<?php echo lang_decode($album->name,'cn')?>" class="full" />
 			</td>
+		</tr>
+		<tr>
+		    <th></th>
+		    <td><input type="button" name="image_add" value="เพิ่มรูปภาพ" /></td>
 		</tr>
 		<!-- <tr>
 			<th>ลายน้ำ</th>

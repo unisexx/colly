@@ -30,18 +30,36 @@ class Products extends Admin_Controller
 	{
 		if($_POST)
 		{
-			$Product = new Product($id);
+			$product = new Product($id);
             $_POST['slug'] = clean_url($_POST['title']['th']);
             $_POST['title'] = lang_encode($_POST['title']);
             $_POST['detail'] = lang_encode($_POST['detail']);
 			if(!$id)$_POST['user_id'] = $this->session->userdata('id');
-			if($_FILES['image']['name'])
-			{
-				if($id)$Product->delete_file($Product->id,'uploads/Product/thumbnail','image');
-				$Product->image = $Product->upload($_FILES['image'],'uploads/Product/');
-			}
-			$Product->from_array($_POST);
-			$Product->save();
+			$product->from_array($_POST);
+			$product->save();
+			
+			fix_file($_FILES['image']);
+            foreach($_FILES['image'] as $key => $image)
+            {
+                $picture = new Product_picture(@$_POST['picture_id'][$key]);
+                if($image['name'])
+                {
+                    // if(@$_POST['picture_id'][$key])
+                    // {
+                        // $picture->delete_file('uploads/product/'.$product->id,'image');
+                        // $picture->delete_file('uploads/product/thumbnail/'.$product->id,'image');
+                    // }
+                    // if(@$_POST['watermark'])
+                    // {
+                        // $picture->watermark($_POST['watermark'], $_POST['position']);
+                    // }
+                    $picture->image = $picture->upload($image,'uploads/product/'.$product->id);
+                    $picture->thumb('uploads/product/'.$product->id.'/thumbnail',275,180); 
+                    $picture->product_id = $product->id;
+                    $picture->save();
+                }   
+            }
+            
 			set_notify('success', lang('save_data_complete'));
 		}
 		redirect($_POST['referer']);
@@ -65,11 +83,24 @@ class Products extends Admin_Controller
 	{
 		if($id)
 		{
-			$Product = new Product($id);
-			$Product->delete();
+			$product = new Product($id);
+            remove_dir('uploads/product/'.$product->id);
+            $product->product_picture->delete_all();
+			$product->delete();
 			set_notify('success', lang('delete_data_complete'));
 		}
 		redirect($_SERVER['HTTP_REFERER']);
 	}
+
+    function delete_picture($id)
+    {
+        if($id)
+        {
+            $picture = new Product_picture($id);
+            // $picture->delete_file('uploads/albums/'.$album->id,'image');
+            // $picture->delete_file('uploads/albums/thumbnail/'.$album->id,'image');
+            $picture->delete();
+        }
+    }
 }
 ?>

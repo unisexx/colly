@@ -10,6 +10,20 @@ $(function(){
         $(this).addClass('active').siblings().removeClass('active');
         return false;
     })
+    
+    $('input[name=image_add]').click(function(){
+        $('.form tr:last').before('<tr><th>รูปภาพ </th><td><input type="file" name="image[]" /></td></tr>');
+    })
+    
+    $('input[name=picture_delete]').click(function(){
+        if(confirm('ยืนยันการลบ'))
+        {
+            var me = $(this);
+            $.post('products/admin/products/delete_picture/' + $(this).attr('rel'),function(data){
+                me.parent().parent().remove();
+            })
+        }
+    })
 })
 </script>
 
@@ -18,13 +32,12 @@ $(function(){
 	
 <table class="form">
     <tr class="trlang"><th></th><td class="lang"><a href="th" class="active flag th">ไทย</a><a href="en" class="flag en">อังกฤษ</a><a href="cn" class="flag cn">จีน</a></td></tr>
-	<tr>
+	<!-- <tr>
 		<th></th>
 		<td>
 			<?php if($product->image != ""):?><?php echo thumb("uploads/product/".$product->image,120,false,1);?><?php endif;?>
 		</td>
-	</tr>
-	<tr><th>รูปภาพ :</th><td><input type="file" name="image" /></td></tr>
+	</tr> -->
 	<tr>
         <th>รหัสสินค้า :</th>
         <td>
@@ -47,6 +60,25 @@ $(function(){
             <div rel="cn"><textarea name="detail[cn]" class="full tinymce"><?php echo lang_decode($product->detail,'cn')?></textarea></div>
         </td>
     </tr>
+    <tr>
+        <th></th>
+        <td><input type="button" name="image_add" value="เพิ่มรูปภาพ" /></td>
+    </tr>
+    <?php foreach($product->product_picture as $picture): ?>
+    <tr>
+        <th>รูปภาพ </th>
+        <td>
+            <a href="uploads/product/<?php echo $product->id ?>/<?php echo $picture->image ?>" rel="lightbox">
+            <img style="width:50px; vertical-align:middle;" src="uploads/product/<?php echo $product->id ?>/thumbnail/<?php echo $picture->image ?>" />
+            </a>
+            <!-- <input type="text" name="title[]" placeholder="ชื่อรูป"> -->
+            <input type="file" name="image[]" />
+            <input type="hidden" name="picture_id[]" value="<?php echo $picture->id ?>" />
+            <input type="button" name="picture_delete" value="ลบ" rel="<?php echo $picture->id ?>" />
+        </td>
+    </tr>
+    <?php endforeach; ?>
+    <tr><th>รูปภาพ :</th><td><input type="file" name="image[]" /></td></tr>
 	<tr><th></th><td><input type="submit" value="บันทึก" /><?php echo form_back() ?></td></tr>
 </table>
 <?php echo form_referer() ?>
