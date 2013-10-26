@@ -8,7 +8,7 @@ class Bnews extends Public_Controller
     
     function index(){
         $data['bnews'] = new Bnew();
-        $data['bnews']->order_by('id','desc')->get_page();
+        $data['bnews']->order_by('id','desc')->get_page(6);
         $this->template->build('index',$data);
     }
     

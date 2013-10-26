@@ -14,15 +14,15 @@ Author URI: http://www.mis-algoritmos.com
 		var $target = ""; 
 		var $page = 1;
 		var $adjacents = 2;
-		var $showCounter = false;
+		var $showCounter = true;
 		var $className = "pagination";
 		var $parameterName = "page";
 		var $urlF = false;//urlFriendly
 
 		/*Buttons next and previous*/
-		var $nextT = "Next";
+		var $nextT = "";
 		var $nextI = "&#187;"; //&#9658;
-		var $prevT = "Previous";
+		var $prevT = "";
 		var $prevI = "&#171;"; //&#9668;
 
 		/*****/

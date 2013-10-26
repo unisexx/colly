@@ -45,3 +45,9 @@
 .thsarabunnew{
    font-family: 'THSarabunNew', sans-serif;
 }
+
+@font-face { font-family: 'dokchamp'; src: url('dokchamp.ttf') format('truetype');  font-style: normal;}
+.dokchamp{ font-family: 'dokchamp';}
+
+@font-face { font-family: 'thaisansneue'; src: url('thaisansneue-regular.otf') format('truetype');  font-style: normal;}
+.thaisansneue{ font-family: 'thaisansneue';}

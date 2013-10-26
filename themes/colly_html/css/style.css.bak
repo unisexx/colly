@@ -169,7 +169,7 @@ text-align:center; color:black; line-height:20px;height:96px;  border-top:1px so
 
 
 /*pagenumber*/
-	#pagenumber{width:610px; margin-left:140px;}
+	#pagenumber{width:610px; margin-left:140px; margin-bottom:30px; margin-top:30px;}
 	.pagenumber{float:left; color:#9a9a9a; font-size:11px; margin-top:30px; }
 
 	.runpage_re{float:right;   margin-top:20px; margin-bottom:30px;}

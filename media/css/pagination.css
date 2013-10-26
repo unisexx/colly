@@ -2,16 +2,16 @@ body .pagination span,.pagination a{padding:5px;}
 
 body div.pagination{
     text-align:center !important;
-    margin: 10px 0 0 0;
+    float: right;margin-top: 20px;margin-bottom: 30px;
+    position: relative;
 }
 
 body div.pagination a,div.pagination span{
-    margin:0 5px;
-    padding:3px 12px;
+    margin:0 2px;
+    padding:0 8px;
     -webkit-border-radius:3px;
     -moz-border-radius:3px;
     color:#444444 !important;
-    font-weight:bold;
     text-decoration:none;
     cursor:pointer;
     line-height:20px;
@@ -25,19 +25,8 @@ body div.pagination a,div.pagination span{
 
 body div.pagination span.current,div.pagination a:hover{
     color:#FFFFFF !important;
-    background-color:#5D9ADF;
-    background: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    color-stop(0.2, rgb(80,146,220)),
-    color-stop(0.8, rgb(107,163,226))
-    );
-    background: -moz-linear-gradient(
-    center bottom,
-    rgb(80,146,220) 20%,
-    rgb(107,163,226) 80%
-    );
-    border:1px solid #266DBB;
-    text-shadow:-1px -1px 1px #266DBB;
+    background: #de8d8d;
+    border: 1px solid #feead2;
 }
+
+.pagination_data{color: #9a9a9a;font-size: 11px;position:absolute;left: -450px;top: 6px;}
