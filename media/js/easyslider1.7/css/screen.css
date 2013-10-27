@@ -73,36 +73,36 @@
 			define width and height of list item (slide)
 			entire slider area will adjust according to the parameters provided here
 		*/ 
-		width:732px;
-		height:330px;
+		width:931px;
+		height:511px;
 		overflow:hidden;
 		}	
 	#prevBtn, #nextBtn,
 	#slider1next, #slider1prev{ 
 		display:block;
-		width:5px;
-		height:7px;
+		width:21px;
+		height:39px;
 		position:absolute;
-		left:683px;
-		top:4px;
+		left:0px;
+		top:375px;
 		z-index:1000;
-		border:1px solid #CCC;
-		background:#EFEEEE;
+		/*border:1px solid #CCC;
+		background:#EFEEEE;*/
 		padding:3px 4px;
 		}	
 	#nextBtn, #slider1next{ 
-		left:700px;
+		left:965px;
 		}														
 	#prevBtn a, #nextBtn a,
 	#slider1next a, #slider1prev a{  
 		display:block;
 		position:relative;
-		width:5px;
-		height:7px;
-		background:url(../images/run_arrowLeft.png) no-repeat 0 0;	
+		width:21px;
+		height:39px;
+		background:url(../images/colly_arrowLeft.png) no-repeat 0 0;	
 		}	
 	#nextBtn a, #slider1next a{ 
-		background:url(../images/run_arrowRight.png) no-repeat 0 0;	
+		background:url(../images/colly_arrowRight.png) no-repeat 0 0;	
 		}	
 		
 	/* numeric controls */	

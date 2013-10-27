@@ -13,7 +13,7 @@ $(function(){
 	
 <table class="form">
     <tr class="trlang"><th></th><td class="lang"><a href="th" class="active flag th">ไทย</a><a href="en" class="flag en">อังกฤษ</a><a href="cn" class="flag cn">จีน</a></td></tr>
-    <tr>
+    <!-- <tr>
 		<th></th>
 		<td>
 			<?php if($agent->image != ""):?>
@@ -23,7 +23,7 @@ $(function(){
 			<?php endif;?>
 		</td>
 	</tr>
-	<tr><th>รูปภาพ :</th><td><input type="file" name="image" /></td></tr>
+	<tr><th>รูปภาพ :</th><td><input type="file" name="image" /></td></tr> -->
 	<!-- 
 	<tr>
         <th>รหัส :</th>
@@ -54,12 +54,13 @@ $(function(){
             <div rel="cn"><textarea name="address[cn]" class="full"><?php echo lang_decode($agent->address,'cn')?></textarea></div>
         </td>
     </tr>
-    <!-- <tr>
+    <tr>
         <th>โทรศัพท์ :</th>
         <td>
             <input rel="th" type="text" name="tel" value="<?php echo $agent->tel?>" class="full" />
         </td>
-    </tr><tr>
+    </tr>
+    <!-- <tr>
         <th>โทรสาร :</th>
         <td>
             <input rel="th" type="text" name="fax" value="<?php echo $agent->fax?>" class="full" />

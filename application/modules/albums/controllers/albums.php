@@ -27,10 +27,8 @@ class Albums extends Public_Controller
 	function view($id,$slug = NULL)
 	{
 		$data['album'] = new Album($id);
-		$data['category'] = new Category($data['album']->agency_id);
-		$data['slug'] = ($slug)?$slug:$data['category']->slug;
-		$data['theme'] = new Category();
-		$data['theme']->get_by_slug($data['slug']);
+        $data['pictures'] = new Picture();
+        $data['pictures']->where('album_id = ',$id)->order_by('id','desc')->get_page(12);
 		$this->template->build('album_view',$data);
 	}
 	

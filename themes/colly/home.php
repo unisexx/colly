@@ -13,14 +13,15 @@
     <div class="main">
         <?php include_once '_header.php';?>
         
-        <div class="arrow_left"><a href="#"><img src="themes/colly/images/arrow_left.png" border="0"></a></div>
+        <!-- <div class="arrow_left"><a href="#"><img src="themes/colly/images/arrow_left.png" border="0"></a></div>
           <div id="slider" >            
             <ul id="highLight">
                 <li><a href="#"><img src="themes/colly/images/hilight01.jpg" width="931" height="511" border="0" /></a></li>
             </ul>           
           </div>
-        <div class="arrow_right"><a href="#"><img src="themes/colly/images/arrow_right.png" border="0"></a></div>
-    <div class="clr"></div>
+        <div class="arrow_right"><a href="#"><img src="themes/colly/images/arrow_right.png" border="0"></a></div> -->
+        <?php echo modules::run('hilights/inc_home'); ?>
+        <div class="clr"></div>
         <?php echo modules::run('products/inc_home'); ?>
         <br>
         <div class="clr"></div>

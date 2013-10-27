@@ -4,7 +4,7 @@
 $(document).ready(function(){   
     $("#slider").easySlider({
         auto: true, 
-        numeric: true,
+        numeric: false,
         numericId: 'controls',
         continuous: true,
         pause: 5000
@@ -18,7 +18,7 @@ $(document).ready(function(){
             <li>
                 <div>
                     <a href="<?=$hilight->url?>">
-                        <?php echo thumb("uploads/hilight/".$hilight->image,732,330,1)?>
+                        <?php echo thumb("uploads/hilight/".$hilight->image,931,511,1)?>
                     </a>
                     <div class="clear"></div>
                 </div>

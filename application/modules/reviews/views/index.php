@@ -1,24 +1,21 @@
-<img src="themes/colly/images/title_newsupdate.png" width="153" height="23" class="title_news">
-    <div class="linenews">&nbsp;</div>
-         <div id="news_bg">
-            <div id="contentnews_">
-                <ul><br>
-                    <?php foreach($reviews as $row):?>
-                        <li style=" border-right:1px dotted #b2b2b2; border-bottom:1px dotted #b2b2b2;">
-                            <a href="reviews/view/<?php echo $row->id?>"><img src="uploads/bnew/<?php echo $row->image?>" border="0" class="imgNews_"></a>
-                            <div class="boxtextnews2">
-                                <span class="dateNews"><?php echo mysql_to_th($row->created);?></span><br>
-                                <span class="h_textNews"><?php echo lang_decode($row->title)?></span><br>
-                                <a href="reviews/view/<?php echo $row->id?>" class="textNews2"><?php echo strip_tags(lang_decode($row->detail))?></a>
-                            </div>
-                        </li>
-                    <?php endforeach;?>
-                </ul>
-                <div class="clr"></div><br>
-            </div>
+<div id="slider_products" >         
+<ul id="highLight_products">
+        <li><img src="themes/colly/images/hilight_review_1.jpg" width="871" height="177" style="margin-left:50px;"></li>
+    </ul>           
+</div>
+      <div class="clr"></div>
+          <div id="review">
+            <img src="themes/colly/images/title_review.png" width="100" height="30"  class="title_review">
+<div class="line_review">&nbsp;</div>
             
-            <div id="pagenumber">
-                <?php echo $reviews->pagination()?>
-            </div>
-            
-        </div>
+              <ul>
+                  <?php foreach($reviews as $row):?>
+                      <li><div class="text_review"><?php echo lang_decode($row->title);?></div><a href="<?php echo $row->url?>" rel="lightbox[review]" title="<?php echo lang_decode($row->title)?>"><img src="http://img.youtube.com/vi/<?php echo getYouTubeIdFromURL($row->url)?>/maxresdefault.jpg" class="imgvdo" width="261" height="167"></a></li>
+                  <?php endforeach;?>
+              </ul>
+          </div>
+          
+          <div id="pagenumber_gallery">
+            <?php echo $reviews->pagination()?>
+          </div>
+        <div class="clr"></div>

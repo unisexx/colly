@@ -3,7 +3,7 @@ class Agent extends ORM {
 
     var $table = 'agents';
 	
-	var $has_one = array('user','category');
+	var $has_one = array('user');
 
     function __construct($id = NULL)
     {

@@ -8,7 +8,7 @@ class Agents extends Public_Controller
 	
 	function index(){
         $data['agents'] = new Agent();
-        $data['agents']->order_by('id','desc')->get_page(6);
+        $data['agents']->order_by('id','desc')->get_page(8);
         $this->template->build('index',$data);
     }
     

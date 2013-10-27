@@ -1,15 +1,22 @@
-<div id="products">
-    <img src="themes/colly/images/title_product.png" width="160" height="28" class="title_product"><div class="line">&nbsp;</div>
-    
-      <ul>
-          <?php foreach($albums as $row): ?>
-            <li>
-                <a href="products/view/<?php echo $row->id?>"><img src="uploads/albums/<?php echo $row->id ?>/thumbnail/<?php echo $row->picture->image ?>" width="190" height="171" /><br><?php echo lang_decode($row->name)?> <span class="num">(<?php echo $album->picture->count() ?> ภาพ)</span></a>
-            </li>
-          <?php endforeach;?>
-      </ul>
-      
-    <div id="pagenumber">
-        <?php echo $albums->pagination()?>
-    </div>
-</div>
+<div id="slider_products" >         
+<ul id="highLight_products">
+                    <li><img src="themes/colly/images/hilight_gallery_2.jpg" width="877" height="177" /></li>
+                </ul>           
+            </div>
+      <div class="clr"></div>
+          <div id="gallery">
+            <img src="themes/colly/images/title_gallery.png" width="144" height="27" class="title_product">
+        <div class="line">&nbsp;</div>
+            
+              <ul>
+                  <?php foreach($albums as $row): ?>
+                      <li>
+                          <a href="albums/view/<?php echo $row->id?>"><?php echo thumb('uploads/albums/'.$row->id.'/thumbnail/'.$row->picture->image,180,270,1,'')?></a>
+                      </li>
+                  <?php endforeach;?>
+              </ul>
+          </div>
+          
+          <div id="pagenumber_gallery">
+            <?php echo $albums->pagination()?>
+          </div>

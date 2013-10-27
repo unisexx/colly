@@ -18,13 +18,13 @@ $(function(){
 	
 <table class="form">
     <tr class="trlang"><th></th><td class="lang"><a href="th" class="active flag th">ไทย</a><a href="en" class="flag en">อังกฤษ</a><a href="cn" class="flag cn">จีน</a></td></tr>
-	<tr>
+	<!-- <tr>
 		<th></th>
 		<td>
 			<?php if($review->image != ""):?><?php echo thumb("uploads/bnew/".$review->image,120,false,1);?><?php endif;?>
 		</td>
 	</tr>
-	<tr><th>รูปภาพ :</th><td><input type="file" name="image" /></td></tr>
+	<tr><th>รูปภาพ :</th><td><input type="file" name="image" /></td></tr> -->
 	<tr>
 		<th>หัวข้อ :</th>
 		<td>
@@ -34,13 +34,19 @@ $(function(){
 		</td>
 	</tr>
 	<tr>
+	    <th>youtube url:</th>
+	    <td>
+	        <input type="text" name="url" value="<?php echo $review->url;?>" class="full">
+	    </td>
+	</tr>
+	<!-- <tr>
         <th>รายละเอียด :</th>
         <td>
             <div rel="th"><textarea name="detail[th]" class="full tinymce"><?php echo lang_decode($review->detail,'th')?></textarea></div>
             <div rel="en"><textarea name="detail[en]" class="full tinymce"><?php echo lang_decode($review->detail,'en')?></textarea></div>
             <div rel="cn"><textarea name="detail[cn]" class="full tinymce"><?php echo lang_decode($review->detail,'cn')?></textarea></div>
         </td>
-    </tr>
+    </tr> -->
 	<tr><th></th><td><input type="submit" value="บันทึก" /><?php echo form_back() ?></td></tr>
 </table>
 <?php echo form_referer() ?>

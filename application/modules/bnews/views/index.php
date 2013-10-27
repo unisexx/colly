@@ -1,3 +1,8 @@
+<div id="slider_products" >         
+    <ul id="highLight_products">
+        <li><img src="themes/colly/images/hilight_news_1.jpg" width="934" height="177" /></li>
+</div>
+
 <img src="themes/colly/images/title_newsupdate.png" width="153" height="23" class="title_news">
     <div class="linenews">&nbsp;</div>
          <div id="news_bg">

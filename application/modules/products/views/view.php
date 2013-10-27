@@ -1,3 +1,12 @@
+<style>
+body #detail{float:none;width: 100%;}    
+</style>
+
+<div id="slider_products" >         
+    <ul id="highLight_products">
+        <li><img src="themes/colly/images/hilight_products_detail_1.jpg" width="950" height="177" /></li>
+</div>
+
 <div id="path">
     <img src="themes/colly/images/arrow_path1.png" width="7" height="15"><a href="home"><span class="pathlevel_1">หน้าแรก</span></a> <a href="products"><span class="pathlevel_2"> > ผลิตภัณฑ์ ></span></a>  <span class="pathlevel_3"><?php echo lang_decode($product->title)?></span>
 </div>

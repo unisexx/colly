@@ -34,25 +34,34 @@ class Albums extends Admin_Controller
 			fix_file($_FILES['image']);
 			foreach($_FILES['image'] as $key => $image)
 			{
-					$picture = new Picture(@$_POST['picture_id'][$key]);
-					if($image['name'])
-					{
-						// if(@$_POST['picture_id'][$key])
-						// {
-							// $picture->delete_file('uploads/albums/'.$album->id,'image');
-							// $picture->delete_file('uploads/albums/thumbnail/'.$album->id,'image');
-						// }
-						// if(@$_POST['watermark'])
-						// {
-							// $picture->watermark($_POST['watermark'], $_POST['position']);
-						// }
-						$picture->image = $picture->upload($image,'uploads/albums/'.$album->id);
-						$picture->thumb('uploads/albums/'.$album->id.'/thumbnail',275,180);	
-						$picture->album_id = $album->id;
-						$picture->save();
-					}	
+				$picture = new Picture(@$_POST['picture_id'][$key]);
+				if($image['name'])
+				{
+					// if(@$_POST['picture_id'][$key])
+					// {
+						// $picture->delete_file('uploads/albums/'.$album->id,'image');
+						// $picture->delete_file('uploads/albums/thumbnail/'.$album->id,'image');
+					// }
+					// if(@$_POST['watermark'])
+					// {
+						// $picture->watermark($_POST['watermark'], $_POST['position']);
+					// }
+					$picture->title = @$_POST['title'][$key];
+					$picture->image = $picture->upload($image,'uploads/albums/'.$album->id);
+					$picture->thumb('uploads/albums/'.$album->id.'/thumbnail',275,180);	
+					$picture->album_id = $album->id;
+					$picture->save();
+				}	
 			}
-			
+            
+            if($_POST['picture_id']){
+                foreach($_POST['picture_id'] as $key=>$id){
+                    $picture = new Picture($id);
+                    $picture->title = @$_POST['title'][$key];
+                    $picture->save();
+                }
+            }
+            
 			set_notify('success', lang('save_data_complete'));
 		}
 		redirect('albums/admin/albums/form/'.$album->id);

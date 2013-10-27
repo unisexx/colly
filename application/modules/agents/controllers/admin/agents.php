@@ -37,11 +37,11 @@ class Agents extends Admin_Controller
             $_POST['address'] = lang_encode($_POST['address']);
             // $_POST['record'] = lang_encode($_POST['record']);
 			// if(!$id)$_POST['user_id'] = $this->session->userdata('id');
-			if($_FILES['image']['name'])
-			{
-				if($id)$agent->delete_file($agent->id,'uploads/agent/thumbnail','image');
-				$agent->image = $agent->upload($_FILES['image'],'uploads/agent/');
-			}
+			// if($_FILES['image']['name'])
+			// {
+				// if($id)$agent->delete_file($agent->id,'uploads/agent/thumbnail','image');
+				// $agent->image = $agent->upload($_FILES['image'],'uploads/agent/');
+			// }
 			$agent->from_array($_POST);
 			$agent->save();
 			set_notify('success', lang('save_data_complete'));

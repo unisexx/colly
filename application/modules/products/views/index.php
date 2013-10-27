@@ -1,3 +1,8 @@
+<div id="slider_products" >         
+    <ul id="highLight_products">
+        <li><img src="themes/colly/images/hilight_products_1.jpg" width="982" height="177" /></li>
+</div>
+            
 <div id="products">
     <img src="themes/colly/images/title_product.png" width="160" height="28" class="title_product"><div class="line">&nbsp;</div>
     

@@ -12,7 +12,7 @@ ul.list-icon li{float:left;}
     
 		$('select[name=album_category_id]').attr('disabled','');
 		$('input[name=image_add]').click(function(){
-			$('.form tr:last').before('<tr><th>รูปภาพ </th><td><input type="file" name="image[]" /></td></tr>');
+			$('.form tr:last').before('<tr><th>รูปภาพ </th><td><input type="file" name="image[]" /><input type="text" name="title[]" placeholder="ชื่อรูป" value=""></td></tr>');
 		})
 		
 		$('input[name=cat_add]').click(function(){
@@ -138,15 +138,15 @@ ul.list-icon li{float:left;}
 				<?php echo form_radio('position', 'BR', 'BR').'ล่างขวา'; ?>
 			</td>
 		</tr> -->
-		<?php foreach($album->picture as $picture): ?>
+		<?php foreach($album->picture->order_by('id','desc')->get() as $picture): ?>
 		<tr>
 			<th>รูปภาพ </th>
 			<td>
-				<a href="uploads/albums/<?php echo $album->id ?>/<?php echo $picture->image ?>" rel="lightbox">
-				<img style="width:50px; vertical-align:middle;" src="uploads/albums/<?php echo $album->id ?>/thumbnail/<?php echo $picture->image ?>" />
+				<a href="uploads/albums/<?php echo $album->id ?>/<?php echo $picture->image ?>" rel="lightbox[img]">
+				<?php echo thumb('uploads/albums/'.$album->id.'/thumbnail/'.$picture->image,50,false,1,'style="vertical-align:middle;"')?>
 				</a>
-				<!-- <input type="text" name="title[]" placeholder="ชื่อรูป"> -->
-				<input type="file" name="image[]" />
+				<input type="text" name="title[]" placeholder="ชื่อรูป" value="<?php echo $picture->title?>">
+				<input type="file" name="image[]" value="" />
 				<input type="hidden" name="picture_id[]" value="<?php echo $picture->id ?>" />
 				<input type="button" name="picture_delete" value="ลบ" rel="<?php echo $picture->id ?>" />
 			</td>
@@ -154,7 +154,9 @@ ul.list-icon li{float:left;}
 		<?php endforeach; ?>
 		<tr>
 			<th>รูปภาพ </th>
-			<td><input type="file" name="image[]" /></td>
+			<td>
+			    <input type="file" name="image[]" /><input type="text" name="title[]" placeholder="ชื่อรูป" value="">
+			</td>
 		</tr>
 		<tr>	
 			<th></th>

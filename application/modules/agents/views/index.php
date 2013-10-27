@@ -1,34 +1,39 @@
-<style>
-.boxtextnews3{
-float: right;
-width: 248px;
-height: 95px;
-margin-right: 3px;
-padding-top: 2px;
-}
-</style>
-<img src="themes/colly/images/title_newsupdate.png" width="153" height="23" class="title_news">
-    <div class="linenews">&nbsp;</div>
-         <div id="news_bg">
-            <div id="contentnews_">
-                <ul><br>
-                    <?php foreach($agents as $row):?>
-                        <li style=" border-right:1px dotted #b2b2b2; border-bottom:1px dotted #b2b2b2;">
-                            <img src="<?php echo ($row->image != "")?"uploads/agent/".$row->image:"themes/colly/images/productdetail_show_pic1_.jpg";?>" border="0" class="imgNews_">
-                            <div class="boxtextnews3">
-                                <span class="dateNews"><?php echo mysql_to_th($row->created);?></span><br>
-                                <span class="h_textNews"><?php echo lang_decode($row->name)?></span><br>
-                                <div class="textNews2"><?php echo strip_tags(lang_decode($row->address))?></div>
-                                <div class="textNews2"><a href="<?php echo $row->website?>" target="_blank"><?php echo $row->website;?></a></div>
-                            </div>
-                        </li>
-                    <?php endforeach;?>
-                </ul>
-                <div class="clr"></div><br>
+<div id="slider_products" >         
+<ul id="highLight_products">
+                    <li><img src="themes/colly/images/hilight_agent_1.jpg" width="988" height="177" /></li>
+                </ul>           
             </div>
+      <div class="clr"></div>
+          <div id="agent">
+            <img src="themes/colly/images/title_agent.png" width="214" height="31" class="title_review">
+<div class="line_agent">&nbsp;</div>
             
-            <div id="pagenumber">
-                <?php echo $agents->pagination()?>
-            </div>
-            
-        </div>
+              <ul>
+                <?php foreach($agents as $row):?>
+                    <li>
+                        <table width="100%" border="0" cellspacing="0" cellpadding="3">
+                        <tr>
+                            <td width="22%" align="right">ชื่อ : </td>
+                            <td width="78%"><span class="name"><?php echo lang_decode($row->name);?></span></td>
+                          </tr>
+                          <tr>
+                            <td align="right">ที่อยู่ : </td>
+                            <td><?php echo lang_decode($row->address);?></td>
+                          </tr>
+                          <tr>
+                            <td align="right">เบอร์โทรศัพท์ : </td>
+                            <td><?php echo lang_decode($row->tel);?></td>
+                          </tr>
+                          <tr>
+                            <td align="right"> เว็บไซต์ :</td>
+                            <td><?php echo lang_decode($row->website);?></td>
+                          </tr>
+                        </table>
+                    </li>
+                <?php endforeach;?>
+              </ul>
+          </div>
+          
+          <div id="pagenumber_gallery">
+            <?php echo $agents->pagination()?>
+          </div>

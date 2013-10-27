@@ -12,12 +12,6 @@
 <div id="wrap_products">
     <div class="main">
         <?php include_once '_header.php';?>
-        
-        <div id="slider_products" >         
-<ul id="highLight_products">
-                    <li><img src="themes/colly/images/hilight_news_1.jpg" width="934" height="177" /></li>
-                </ul>           
-            </div>
      
         <?php echo $template['body'] ?>
         
