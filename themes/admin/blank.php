@@ -6,7 +6,7 @@
 		<title><?php echo $template['title']; ?></title>
 		<link rel="stylesheet" href="media/css/reset.css" type="text/css" media="screen" charset="utf-8" />
 		<link rel="stylesheet" href="media/css/default.css" type="text/css" media="screen" charset="utf-8" />
-		<link rel="stylesheet" href="media/css/pagination.css" type="text/css" media="screen" charset="utf-8" />
+		<link rel="stylesheet" href="media/css/pagination_admin.css" type="text/css" media="screen" charset="utf-8" />
 		<link rel="stylesheet" href="themes/admin/media/css/stylesheet.css" type="text/css" media="screen" charset="utf-8" /> 
 		
 		<script src="media/js/jquery-1.4.2.min.js" type="text/javascript"></script>

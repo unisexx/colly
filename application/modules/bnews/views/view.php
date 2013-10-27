@@ -1,2 +1,12 @@
-<div class="breadcrumbs"><span class="text_breadcrumbs"><?php echo lang_decode($bnew->title);?></span></div>
-<div id="content"><?php echo lang_decode($bnew->detail)?></div>
+<div id="path">
+    <img src="themes/colly/images/arrow_path1.png" width="7" height="15"><a href="home"><span class="pathlevel_1">หน้าแรก</span></a> <a href="bnews"><span class="pathlevel_2"> > ข่าวสาร</a> ></span> <span class="pathlevel_3"><?php echo lang_decode($bnew->title);?></span>
+</div>
+
+  <div class="clr"></div><br>
+   
+  <div id="products_detail">
+      <span class="title_products_detail"><?php echo lang_decode($bnew->title);?></span><br>
+      <img src="themes/colly/images/line_detail.jpg" width="879" height="17" style="margin-left:30px;"><br>
+      <?php echo lang_decode($bnew->detail);?>
+  </div>
+  </div>

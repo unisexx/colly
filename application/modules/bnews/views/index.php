@@ -5,11 +5,11 @@
                 <ul><br>
                     <?php foreach($bnews as $row):?>
                         <li style=" border-right:1px dotted #b2b2b2; border-bottom:1px dotted #b2b2b2;">
-                            <a href="news/view/<?php echo $row->id?>"><img src="uploads/bnew/<?php echo $row->image?>" border="0" class="imgNews_"></a>
+                            <a href="bnews/view/<?php echo $row->id?>"><img src="uploads/bnew/<?php echo $row->image?>" border="0" class="imgNews_"></a>
                             <div class="boxtextnews2">
                                 <span class="dateNews"><?php echo mysql_to_th($row->created);?></span><br>
                                 <span class="h_textNews"><?php echo lang_decode($row->title)?></span><br>
-                                <a href="news/view/<?php echo $row->id?>" class="textNews2"><?php echo strip_tags(lang_decode($row->detail))?></a>
+                                <a href="bnews/view/<?php echo $row->id?>" class="textNews2"><?php echo strip_tags(lang_decode($row->detail))?></a>
                             </div>
                         </li>
                     <?php endforeach;?>

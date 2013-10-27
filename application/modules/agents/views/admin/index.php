@@ -1,15 +1,11 @@
 <h1>ตัวแทนจำหน่าย</h1>
 
-<?php echo $agents->pagination()?>
 <table class="list">
 	<tr>
 		<!-- <th width="70">แสดง</th> -->
 		<th>ชื่อ</th>
 		<th>ที่อยู่</th>
 		<th>เว็บไซต์</th>
-		<!-- <th>
-			<a rel="lightbox" class="btn" href="categories/admin/categories/agents?iframe=true&width=90%&height=90%">หมวดหมู่</a>
-		</th> -->
 		<th width="90">
 			<a class="btn" href="agents/admin/agents/form">เพิ่มรายการ</a>
 		</th>
@@ -20,11 +16,10 @@
 		<td><?php echo lang_decode($row->name)?></td>
 		<td><?php echo lang_decode($row->address);?></td>
 		<td><?php echo lang_decode($row->website)?></td>
-		<!-- <td><?php echo anchor('agents/admin/agents?category_id='.$row->category_id,lang_decode($row->category->name)) ?></td> -->
 		<td>
 			<a class="btn" href="agents/admin/agents/form/<?php echo $row->id?>" >แก้ไข</a><a class="btn" href="agents/admin/agents/delete/<?php echo $row->id?>" onclick="return confirm('<?php echo lang('notice_confirm_delete');?>')">ลบ</a>
 		</td>
-		</tr>
-		<?php endforeach; ?>
+    </tr>
+    <?php endforeach; ?>
 	</table>
 <?php echo $agents->pagination()?>

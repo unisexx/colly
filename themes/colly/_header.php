@@ -25,7 +25,7 @@
         <li class="topmenu03"><a href="bnews">&nbsp;</a></li>
         <li class="topmenu04"><a href="agents">&nbsp;</a></li>
         <li class="topmenu05"><a href="albums">&nbsp;</a></li>
-        <li class="topmenu06"><a href="#">&nbsp;</a></li>
+        <li class="topmenu06"><a href="reviews">&nbsp;</a></li>
         <li class="topmenu07"><a href="contacts">&nbsp;</a></li>
     </ul>
 </div>

@@ -8,23 +8,23 @@ $(function(){
     })
 })
 </script>
-<h1>เกี่ยวกับสมาชิก</h1>
+<h1>ตัวแทนจำหน่าย</h1>
 <form id="frmMain" action="agents/admin/agents/save/<?php echo $agent->id ?>" method="post" enctype="multipart/form-data" >
 	
 <table class="form">
     <tr class="trlang"><th></th><td class="lang"><a href="th" class="active flag th">ไทย</a><a href="en" class="flag en">อังกฤษ</a><a href="cn" class="flag cn">จีน</a></td></tr>
-	<!-- <tr>
+    <tr>
 		<th></th>
 		<td>
 			<?php if($agent->image != ""):?>
 			    <?php echo thumb("uploads/agent/".$agent->image,120,false,1);?>
 			<?php else:?>
-			    <?php echo thumb("themes/treba/images/company_logo.jpg",120,false,1);?>
+			    <?php echo thumb("themes/colly/images/productdetail_show_pic1_.jpg",120,false,1);?>
 			<?php endif;?>
 		</td>
 	</tr>
 	<tr><th>รูปภาพ :</th><td><input type="file" name="image" /></td></tr>
-	<tr><th>ประเภท :</th><td><?php echo form_dropdown('category_id',$agent->category->get_option(),$agent->category_id,'');?></td></tr>
+	<!-- 
 	<tr>
         <th>รหัส :</th>
         <td>
@@ -73,7 +73,7 @@ $(function(){
     <tr>
         <th>เว็บไซต์ :</th>
         <td>
-            <input rel="th" type="text" name="website" value="<?php echo $agent->website?>" class="full" />
+            <input rel="th" type="text" name="website" value="<?php echo $agent->website?>" class="full" placeholder="ตัวอย่าง http://www.collycollagen.com" />
         </td>
     <!-- </tr><tr>
         <th>อีเมล์:</th>

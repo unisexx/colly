@@ -7,7 +7,7 @@
         <link rel="shortcut icon" type="image/x-icon" href="http://www.zulex.co.th/favicon.ico">
 		<link rel="stylesheet" href="media/css/reset.css" type="text/css" media="screen" charset="utf-8" />
 		<link rel="stylesheet" href="media/css/default.css" type="text/css" media="screen" charset="utf-8" />
-		<link rel="stylesheet" href="media/css/pagination.css" type="text/css" media="screen" charset="utf-8" />
+		<link rel="stylesheet" href="media/css/pagination_admin.css" type="text/css" media="screen" charset="utf-8" />
 		<link rel="stylesheet" href="themes/admin/media/css/stylesheet.css" type="text/css" media="screen" charset="utf-8" /> 
 		<link type="text/css" href="media/css/icons.css" rel="stylesheet" />
 		<script src="media/js/jquery-1.4.2.min.js" type="text/javascript"></script>

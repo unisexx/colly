@@ -7,7 +7,7 @@
   <ul>
       <?php foreach($products as $row):?>
           <li>
-              <a href="products/view/<?php echo $row->id?>"><img src="uploads/product/<?php echo $row->image?>" width="280" height="170" border="0"><br><br>
+              <a href="products/view/<?php echo $row->id?>"><img src="uploads/product/<?php echo $row->id?>/<?php echo $row->product_picture->order_by('id','asc')->get()->image?>" width="280" height="170" border="0"><br><br>
               <span class="title"><?php echo strip_tags(lang_decode($row->title))?></span>
             </a>
           </li>

@@ -13,7 +13,7 @@ $(function(){
 })
 </script>
 
-<h1>ข่าวสารและกิจกรรม</h1>
+<h1>ข่าวสาร</h1>
 <form id="frmMain" action="bnews/admin/bnews/save/<?php echo $bnew->id ?>" method="post" enctype="multipart/form-data" >
 	
 <table class="form">

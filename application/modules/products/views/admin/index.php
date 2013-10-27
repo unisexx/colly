@@ -3,7 +3,6 @@
 <table class="list">
 	<tr>
 	    <!-- <th>รูป</th> -->
-	    <th>รหัสสินค้า</th>
 		<th>หัวข้อ</th>
 		<th width="90">
 			<a class="btn" href="products/admin/products/form">เพิ่มรายการ</a>
@@ -12,7 +11,6 @@
 	<?php foreach($products as $row): ?>
 	<tr <?php echo cycle()?>>
 	    <!-- <td><?php echo thumb("uploads/product/".$row->image,120,false,1);?></td> -->
-	    <td><?php echo $row->code?></td>
 		<td><?php echo lang_decode($row->title);?></td>
 		<td>
 			<a class="btn" href="products/admin/products/form/<?php echo $row->id?>" >แก้ไข</a>

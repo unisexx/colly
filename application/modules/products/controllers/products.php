@@ -8,7 +8,7 @@ class Products extends Public_Controller
     
     function index(){
         $data['products'] = new Product();
-        $data['products']->order_by('id','desc')->get_page();
+        $data['products']->order_by('id','desc')->get_page(6);
         $this->template->build('index',$data);
     }
     
@@ -21,6 +21,13 @@ class Products extends Public_Controller
     function view($id){
         $data['product'] = new Product($id);
         $this->template->build('view',$data);
+    }
+    
+    function getImg(){
+        if($_POST){
+            $picture = new Product_picture($_POST['id']);
+            $this->output->set_output("<img src='uploads/product/".$picture->product_id."/".$picture->image."' width='277' height='203'>");
+        }
     }
 }
 ?>

@@ -101,7 +101,7 @@ text-align:center; vertical-align: top; font-size:17px; font-weight:normal; colo
 .cross-link	{ display: block; width: 62px; margin-top: -14px; position: relative; padding-top: 15px; z-index: 9999; }
 .cross-link:hover{ background:url(../images/productdetail_pic_hover.jpg) no-repeat; background-position:0px 4px;  display: block;  position: relative; z-index: 99999;}
 
-#detail{width:49%; float:left; color:#6f6e6e; text-align:left; margin-top:25px;line-height:25px;}
+#detail{/*width:49%; float:left;*/ color:#6f6e6e; text-align:left; margin-top:25px;line-height:25px;}
 .nameproduct2{font-size:14px; font-weight:bold; color:#6f6e6e;  padding-bottom:6px;}
 .nameproduct{font-size:31px; color:#d9047c; font-family: 'thaisansneue'; padding-bottom:15px;}
 

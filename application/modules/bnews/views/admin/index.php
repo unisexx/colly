@@ -1,8 +1,8 @@
-<h1>ข่าวสารและกิจกรรม</h1>
-<?php echo $bnews->pagination()?>
+<h1>ข่าวสาร</h1>
+
 <table class="list">
 	<tr>
-		<th>ชื่อบริษัท</th>
+		<th>หัวข้อ</th>
 		<th width="90">
 			<a class="btn" href="bnews/admin/bnews/form">เพิ่มรายการ</a>
 		</th>

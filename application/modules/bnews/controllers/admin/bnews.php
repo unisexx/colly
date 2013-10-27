@@ -14,7 +14,6 @@ class Bnews extends Admin_Controller
 		// if(@$_GET['status'])$data['bnews']->where('status',$_GET['status']);
 		// if(@$_GET['category_id'])$data['bnews']->where("category_id = ".$_GET['category_id']);
 		$data['bnews']->order_by('id','desc')->get_page();
-		$this->template->append_metadata(js_lightbox());
 		$this->template->append_metadata(js_checkbox('approve'));
 		$this->template->build('admin/index',$data);
 	}
