@@ -8,9 +8,9 @@
             <td width="22%"><img src="themes/colly/images/tel.png" width="189" height="28" /></td>
             <td width="21%"><a href="mailto:info@collycollagen"><img src="themes/colly/images/e-mail.png" title="info@collycollagen" width="181" height="18" border="0"/></a></td>
             <td width="45%">&nbsp;</td>
-            <td width="3%"><div class="flag_th"><a href="#">&nbsp;</a></div></td>
-            <td width="3%"><div class="flag_eng"><a href="#">&nbsp;</a></div></td>
-            <td width="3%"><div class="flag_chiness"><a href="#">&nbsp;</a></div></td>
+            <td width="3%"><div class="flag_th"><a href="home/lang/th">&nbsp;</a></div></td>
+            <td width="3%"><div class="flag_eng"><a href="home/lang/en">&nbsp;</a></div></td>
+            <td width="3%"><div class="flag_chiness"><a href="home/lang/cn">&nbsp;</a></div></td>
           </tr>
         </table></td>
         <td width="14"><img src="themes/colly/images/bg_top_right.png" width="16" height="41" /></td>

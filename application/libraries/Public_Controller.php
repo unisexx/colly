@@ -23,10 +23,13 @@ class Public_Controller extends Master_Controller
         
         // Set Language
         if(!$this->session->userdata('lang')) $this->session->set_userdata('lang','th');
+       
         if(@$this->session->userdata('lang') == "th"){
             $this->lang->load('public','thai');
-        }else{
+        }elseif(@$this->session->userdata('lang') == "en"){
             $this->lang->load('public','english');
+        }else{
+            $this->lang->load('public','china');
         }
 	}
 }
