@@ -1,6 +1,6 @@
 <div id="slider_products" >         
 <ul id="highLight_products">
-            <li><img src="themes/colly/images/hilight_gallery_2.jpg" width="877" height="177" /></li>
+            <li><img src="<?php echo lang('banner_gallery')?>" width="877" height="177" /></li>
         </ul>           
     </div>
   <div class="clr"></div>

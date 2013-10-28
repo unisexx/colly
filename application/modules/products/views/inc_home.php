@@ -2,7 +2,7 @@
 #products_recomment li a{color:#858282; font-size:15px;}
 </style>
 <div id="products_recomment">
-  <img src="themes/colly/images/title_product.png" width="160" height="28" class="title_product"><div class="line">&nbsp;</div>
+  <img src="<?php echo lang("title_product");?>"  height="28" class="title_product"><div class="line">&nbsp;</div>
 
   <ul>
       <?php foreach($products as $row):?>

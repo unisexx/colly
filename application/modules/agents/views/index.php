@@ -1,11 +1,11 @@
 <div id="slider_products" >         
 <ul id="highLight_products">
-                    <li><img src="themes/colly/images/hilight_agent_1.jpg" width="988" height="177" /></li>
+                    <li><img src="<?php echo lang('banner_agent')?>" width="988" height="177" /></li>
                 </ul>           
             </div>
       <div class="clr"></div>
           <div id="agent">
-            <img src="themes/colly/images/title_agent.png" width="214" height="31" class="title_review">
+            <img src="<?php echo lang("title_agent");?>"  height="31" class="title_review">
 <div class="line_agent">&nbsp;</div>
             
               <ul>

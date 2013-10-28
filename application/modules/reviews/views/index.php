@@ -1,11 +1,11 @@
 <div id="slider_products" >         
 <ul id="highLight_products">
-        <li><img src="themes/colly/images/hilight_review_1.jpg" width="871" height="177" style="margin-left:50px;"></li>
+        <li><img src="<?php echo lang('banner_review')?>" width="871" height="177" style="margin-left:50px;"></li>
     </ul>           
 </div>
       <div class="clr"></div>
           <div id="review">
-            <img src="themes/colly/images/title_review.png" width="100" height="30"  class="title_review">
+            <img src="<?php echo lang("title_review");?>" height="30"  class="title_review">
 <div class="line_review">&nbsp;</div>
             
               <ul>

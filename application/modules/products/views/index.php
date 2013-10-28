@@ -4,7 +4,7 @@
 </div>
             
 <div id="products">
-    <img src="themes/colly/images/title_product.png" width="160" height="28" class="title_product"><div class="line">&nbsp;</div>
+    <img src="<?php echo lang("title_product");?>" height="28" class="title_product"><div class="line">&nbsp;</div>
     
       <ul>
           <?php foreach($products as $row):?>

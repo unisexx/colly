@@ -1,5 +1,5 @@
 <div id="newsupdate">
-    <img src="themes/colly/images/title_newsupdate.png" width="153" height="23" class="title_product">
+    <img src="<?php echo lang("title_new");?>" height="23" class="title_product">
     <div class="line">&nbsp;</div>
   <div class="btn_more">&nbsp;</div>
 </div>

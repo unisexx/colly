@@ -23,11 +23,11 @@ a:hover {color:#0190fe;}
 
 
 .flag_th a{display:block;width:24px; height:19px; background: url(../images/th_reg.png);background-repeat:no-repeat;  cursor:pointer;}
-.flag_th a:hover{width:24px; height:19px; background: url(../images/th_hot.png);background-repeat:no-repeat;}
+.flag_th a:hover,.flag_th a.active{width:24px; height:19px; background: url(../images/th_hot.png);background-repeat:no-repeat;}
 .flag_eng a{display:block;width:24px; height:19px; background: url(../images/eng_reg.png);background-repeat:no-repeat;  cursor:pointer;}
-.flag_eng a:hover{width:24px; height:19px; background: url(../images/eng_hot.png);background-repeat:no-repeat;}
+.flag_eng a:hover,.flag_eng a.active{width:24px; height:19px; background: url(../images/eng_hot.png);background-repeat:no-repeat;}
 .flag_chiness a{display:block;width:24px; height:19px; background: url(../images/chiness_reg.png);background-repeat:no-repeat;  cursor:pointer;}
-.flag_chiness a:hover{width:24px; height:19px; background: url(../images/chiness_hot.png);background-repeat:no-repeat;}
+.flag_chiness a:hover,.flag_chiness a.active{width:24px; height:19px; background: url(../images/chiness_hot.png);background-repeat:no-repeat;}
 
 
 #logo{float:left; left:0; width:173px; height:172px; background: url(../images/logo.png); background-repeat:no-repeat; position:absolute;}
@@ -51,6 +51,19 @@ a:hover {color:#0190fe;}
 .topmenu06 a:hover{ width:67px; height:25px; background: url(../images/topmenu05_hot.png);background-repeat:no-repeat;}
 .topmenu07 a{display:inline-block; width:65px; height:25px; background: url(../images/topmenu06_reg.png);background-repeat:no-repeat; cursor:pointer;}
 .topmenu07 a:hover{ width:65px; height:25px; background: url(../images/topmenu06_hot.png);background-repeat:no-repeat;}
+
+.topmenu02_en a{display:inline-block; width:69px; height:25px; background: url(../images/eng/topmenu01_reg_eng.png);background-repeat:no-repeat; cursor:pointer;}
+.topmenu02_en a:hover{ width:69px; height:25px; background: url(../images/eng/topmenu01_hot_eng.png);background-repeat:no-repeat;}
+.topmenu03_en a{display:inline-block; width:54px; height:28px; background: url(../images/eng/topmenu02_reg_eng.png);background-repeat:no-repeat; cursor:pointer;}
+.topmenu03_en a:hover{ width:54px; height:28px; background: url(../images/eng/topmenu02_hot_eng.png);background-repeat:no-repeat;}
+.topmenu04_en a{display:inline-block; width:50px; height:25px; background: url(../images/eng/topmenu03_reg_eng.png);background-repeat:no-repeat; cursor:pointer;}
+.topmenu04_en a:hover{ width:50px; height:25px; background: url(../images/eng/topmenu03_hot_eng.png);background-repeat:no-repeat;}
+.topmenu05_en a{display:inline-block; width:61px; height:25px; background: url(../images/eng/topmenu04_reg_eng.png);background-repeat:no-repeat; cursor:pointer;}
+.topmenu05_en a:hover{ width:61px; height:25px; background: url(../images/eng/topmenu04_hot_eng.png);background-repeat:no-repeat;}
+.topmenu06_en a{display:inline-block; width:67px; height:25px; background: url(../images/eng/topmenu05_reg_eng.png);background-repeat:no-repeat; cursor:pointer;}
+.topmenu06_en a:hover{ width:67px; height:25px; background: url(../images/eng/topmenu05_hot_eng.png);background-repeat:no-repeat;}
+.topmenu07_en a{display:inline-block; width:65px; height:25px; background: url(../images/eng/topmenu06_reg_eng.png);background-repeat:no-repeat; cursor:pointer;}
+.topmenu07_en a:hover{ width:65px; height:25px; background: url(../images/eng/topmenu06_hot_eng.png);background-repeat:no-repeat;}
 
 
 	/* ### HIGHLIGHT ### */
