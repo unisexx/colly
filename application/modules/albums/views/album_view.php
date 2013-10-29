@@ -11,7 +11,7 @@
       <ul>
           <?php foreach($pictures as $row): ?>
               <li>
-                  <a href="uploads/albums/<?php echo $album->id?>/<?php echo $row->image?>" rel='lightbox[gal]'><?php echo thumb('uploads/albums/'.$album->id.'/'.$row->image,320,false,1,'')?></a>
+                  <a href="uploads/albums/<?php echo $album->id?>/<?php echo $row->image?>" rel='lightbox[gal]' title="<?php echo $row->title?>"><?php echo thumb('uploads/albums/'.$album->id.'/'.$row->image,320,false,1,'')?></a>
               </li>
           <?php endforeach;?>
       </ul>

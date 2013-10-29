@@ -194,7 +194,8 @@ Author URI: http://www.mis-algoritmos.com
 										$this->pagination .= "<a href=\"".$this->get_pagenum_link($next)."\" class=\"next\">$n</a><br clear='all'>";
 									else
 										$this->pagination .= "<span class=\"disabled\">$n</span>";
-									if($this->showCounter)$this->pagination .= "<div class=\"pagination_data\">($this->total_pages Pages)</div>";
+									// if($this->showCounter)$this->pagination .= "<div class=\"pagination_data\">($this->total_pages Item)</div>";
+                                    if($this->showCounter)$this->pagination .= "<div class=\"pagination_data\">Page $this->page of $lastpage</div>";
 							}
 					}
 

@@ -122,6 +122,10 @@ ul.list-icon li{float:left;}
 			</td>
 		</tr>
 		<tr>
+		    <th>วันที่จัดงาน</th>
+		    <td><input type="text" class="datepicker" name="actdate" value="<?php echo DB2Date(($album->actdate)?$album->actdate:date("Y-m-d"))?>"></td>
+		</tr>
+		<tr>
 		    <th></th>
 		    <td><input type="button" name="image_add" value="เพิ่มรูปภาพ" /></td>
 		</tr>

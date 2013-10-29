@@ -18,6 +18,7 @@ class Albums extends Admin_Controller
 	{	
 		$data['album'] = new Album($id);
 		$this->template->append_metadata(js_lightbox());
+        $this->template->append_metadata(js_datepicker());
 		$this->template->build('admin/form',$data);	
 	}
 	
@@ -26,6 +27,7 @@ class Albums extends Admin_Controller
 		if($_POST)
 		{
 			$album = new Album($id);
+            $_POST['actdate'] = Date2DB($_POST['actdate']);
 			$album->user_id = $this->session->userdata('id');
             $_POST['name'] = lang_encode($_POST['name']);
 			$album->from_array($_POST);

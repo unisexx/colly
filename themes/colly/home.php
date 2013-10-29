@@ -28,7 +28,9 @@
         
         <?php echo modules::run('bnews/inc_home'); ?>
          
-      <div id="fb"><img src="themes/colly/images/fb.jpg" width="286" height="351" /></div>
+          <div id="fb">
+              <iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FCollyCollagen%3Ffref%3Dts&amp;width=287&amp;height=351&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=false&amp;show_border=true&amp;appId=478882442186992" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:287px; height:351px;" allowTransparency="true"></iframe>
+          </div>
         <div class="clr"></div>
   </div>
   <?php include_once '_footer.php';?>
