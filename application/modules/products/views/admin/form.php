@@ -78,7 +78,7 @@ $(function(){
         </td>
     </tr>
     <?php endforeach; ?>
-    <tr><th>รูปภาพ :</th><td><input type="file" name="image[]" /></td></tr>
+    <tr><th>รูปภาพ :</th><td><input type="file" name="image[]" /> ขนาด 275 x 180px</td></tr>
 	<tr><th></th><td><input type="submit" value="บันทึก" /><?php echo form_back() ?></td></tr>
 </table>
 <?php echo form_referer() ?>

@@ -18,7 +18,7 @@ $(function(){
             <?php if($hilight->image != ""):?><?php echo thumb("uploads/hilight/".$hilight->image,500,false,1);?><?php endif;?>
         </td>
     </tr>
-	<tr><th>รูปภาพ :</th><td><input type="file" name="image" /></td></tr>
+	<tr><th>รูปภาพ :</th><td><input type="file" name="image" /> ขนาด 931 x 511px</td></tr>
 	<tr>
 		<th>หัวข้อ :</th>
 		<td>

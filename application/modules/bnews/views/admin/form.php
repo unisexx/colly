@@ -24,7 +24,7 @@ $(function(){
 			<?php if($bnew->image != ""):?><?php echo thumb("uploads/bnew/".$bnew->image,120,false,1);?><?php endif;?>
 		</td>
 	</tr>
-	<tr><th>รูปภาพ :</th><td><input type="file" name="image" /></td></tr>
+	<tr><th>รูปภาพ :</th><td><input type="file" name="image" /> ขนาด 188 x 100px</td></tr>
 	<tr>
 		<th>หัวข้อ :</th>
 		<td>
