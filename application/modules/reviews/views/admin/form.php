@@ -18,13 +18,13 @@ $(function(){
 	
 <table class="form">
     <tr class="trlang"><th></th><td class="lang"><a href="th" class="active flag th">ไทย</a><a href="en" class="flag en">อังกฤษ</a><a href="cn" class="flag cn">จีน</a></td></tr>
-	<!-- <tr>
+	<tr>
 		<th></th>
 		<td>
-			<?php if($review->image != ""):?><?php echo thumb("uploads/bnew/".$review->image,120,false,1);?><?php endif;?>
+			<?php if($review->image != ""):?><?php echo thumb("uploads/review/".$review->image,120,false,1);?><?php endif;?>
 		</td>
 	</tr>
-	<tr><th>รูปภาพ :</th><td><input type="file" name="image" /></td></tr> -->
+	<tr><th>รูปภาพ :</th><td><input type="file" name="image" /></td></tr>
 	<tr>
 		<th>หัวข้อ :</th>
 		<td>
@@ -39,6 +39,10 @@ $(function(){
 	        <input type="text" name="url" value="<?php echo $review->url;?>" class="full">
 	    </td>
 	</tr>
+	<tr>
+        <th>เลือกไฟล์วิดีโอ :</th>
+        <td><input class="full" type="text" name="media" value="<?php echo $review->media?>"/><input type="button" name="browse" value="เลือกไฟล์" onclick="browser($(this).prev(),'media')" /></td>
+    </tr>
 	<!-- <tr>
         <th>รายละเอียด :</th>
         <td>

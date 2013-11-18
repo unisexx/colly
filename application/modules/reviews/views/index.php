@@ -10,7 +10,11 @@
             
               <ul>
                   <?php foreach($reviews as $row):?>
-                      <li><div class="text_review"><?php echo lang_decode($row->title);?></div><a href="<?php echo $row->url?>" rel="lightbox[review]" title="<?php echo lang_decode($row->title)?>"><img src="http://img.youtube.com/vi/<?php echo getYouTubeIdFromURL($row->url)?>/maxresdefault.jpg" class="imgvdo" width="261" height="167"></a></li>
+                      <?php if($row->url != ""):?>
+                          <li><div class="text_review"><?php echo lang_decode($row->title);?></div><a href="<?php echo $row->url?>" rel="lightbox[review]" title="<?php echo lang_decode($row->title)?>"><img src="http://img.youtube.com/vi/<?php echo getYouTubeIdFromURL($row->url)?>/hqdefault.jpg" class="imgvdo" width="261" height="167"></a></li>
+                      <?php else:?>
+                          <li><div class="text_review"><?php echo lang_decode($row->title);?></div><a href="reviews/ajax_vid/<?php echo $row->id?>?iframe=true&width=500&height=344" rel="lightbox[review]" title="<?php echo lang_decode($row->title)?>"><img src="uploads/review/<?php echo $row->image?>" class="imgvdo" width="261" height="167"></a></li>
+                      <?php endif;?>
                   <?php endforeach;?>
               </ul>
           </div>

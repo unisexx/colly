@@ -33,11 +33,10 @@ class Reviews extends Admin_Controller
             $_POST['title'] = lang_encode($_POST['title']);
             // $_POST['detail'] = lang_encode($_POST['detail']);
 			if(!$id)$_POST['user_id'] = $this->session->userdata('id');
-			// if($_FILES['image']['name'])
-			// {
-				// if($id)$review->delete_file($review->id,'uploads/review/thumbnail','image');
-				// $review->image = $review->upload($_FILES['image'],'uploads/review/');
-			// }
+			if($_FILES['image']['name'])
+			{
+				$review->image = $review->upload($_FILES['image'],'uploads/review/',261,167);
+			}
 			$review->from_array($_POST);
 			$review->save();
 			set_notify('success', lang('save_data_complete'));

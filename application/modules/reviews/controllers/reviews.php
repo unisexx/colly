@@ -22,5 +22,10 @@ class Reviews extends Public_Controller
         $data['review'] = new Review($id);
         $this->template->build('view',$data);
     }
+    
+    function ajax_vid($id){
+        $data['review'] = new Review($id);
+        $this->load->view('ajax_vid',$data);
+    }
 }
 ?>
