@@ -8,7 +8,7 @@ body #detail{float:none;width: 100%;}
 </div>
 
 <div id="path">
-    <img src="themes/colly/images/arrow_path1.png" width="7" height="15"><a href="home"><span class="pathlevel_1">หน้าแรก</span></a> <a href="products"><span class="pathlevel_2"> > ผลิตภัณฑ์ ></span></a>  <span class="pathlevel_3"><?php echo lang_decode($product->title)?></span>
+    <img src="themes/colly/images/arrow_path1.png" width="7" height="15"><a href="home"><span class="pathlevel_1"><?php echo lang('home');?></span></a> <a href="products"><span class="pathlevel_2"> > <?php echo lang('product');?> ></span></a>  <span class="pathlevel_3"><?php echo lang_decode($product->title)?></span>
 </div>
           
   <div class="clr"></div>

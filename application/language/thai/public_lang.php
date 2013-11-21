@@ -24,4 +24,18 @@ $lang['title_new'] = "themes/colly/images/title_newsupdate.png";
 $lang['title_agent'] = "themes/colly/images/title_agent.png";
 $lang['title_gallery'] = "themes/colly/images/title_gallery.png";
 $lang['title_review'] = "themes/colly/images/title_review.png";
+
+//----------------- Contact --------------------
+$lang['contact_title'] = "หัวข้อ";
+$lang['contact_detail'] = "รายละเอียด";
+$lang['contact_email'] = "อีเมล์";
+$lang['contact_captcha'] = "รหัสลับ";
+
+//----------------- Breadcrumb --------------------
+$lang['home'] = "หน้าแรก";
+$lang['product'] = "ผลิตภัณฑ์";
+$lang['news'] = "ข่าวสาร";
+
+//----------------- Footer --------------------
+$lang['footer'] = "themes/colly/images/name_company2.png";
 ?>

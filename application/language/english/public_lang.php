@@ -24,4 +24,18 @@ $lang['title_new'] = "themes/colly/images/eng/title_newsupdate_eng.png";
 $lang['title_agent'] = "themes/colly/images/eng/title_agent_eng.png";
 $lang['title_gallery'] = "themes/colly/images/eng/title_gallery_eng.png";
 $lang['title_review'] = "themes/colly/images/eng/title_review_eng.png";
+
+//----------------- Contact --------------------
+$lang['contact_title'] = "Title";
+$lang['contact_detail'] = "Detail";
+$lang['contact_email'] = "Email";
+$lang['contact_captcha'] = "Captcha";
+
+//----------------- Breadcrumb --------------------
+$lang['home'] = "Home";
+$lang['product'] = "Product";
+$lang['news'] = "News";
+
+//----------------- Footer --------------------
+$lang['footer'] = "themes/colly/images/name_company2_eng.png";
 ?>
