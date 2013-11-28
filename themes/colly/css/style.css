@@ -66,6 +66,13 @@ a:hover {color:#0190fe;}
 .topmenu07_en a:hover{ width:65px; height:25px; background: url(../images/eng/topmenu06_hot_eng.png);background-repeat:no-repeat;}
 
 
+.fixture-list {position:absolute;right:17px; top:105px; list-style:none;}
+.fixture-list li{display:block !important;background:none !important; padding:0 !important;}
+.submenu01 a{display:inline-block; width:197px; height:20px; background: url(../images/supmenu_review_1.png);background-repeat:no-repeat; cursor:pointer;}
+.submenu01 a:hover{width:197px; height:20px; background: url(../images/supmenu_review_1_hot.png);background-repeat:no-repeat;}
+.submenu02 a{display:inline-block; width:197px; height:20px; background: url(../images/supmenu_review_2.png);background-repeat:no-repeat; cursor:pointer;}
+.submenu02 a:hover{width:197px; height:20px; background: url(../images/supmenu_review_2_hot.png);background-repeat:no-repeat;}
+
 	/* ### HIGHLIGHT ### */
 	#slider{margin-top:34px;margin-left:30px;}
 	#highLight{margin:0; padding:0; list-style:none;}

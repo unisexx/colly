@@ -8,6 +8,7 @@ class Reviews extends Public_Controller
     
     function index(){
         $data['reviews'] = new Review();
+        (@$_GET['category'])?$data['reviews']->where("category = '".$_GET['category']."'"):'';
         $data['reviews']->order_by('id','desc')->get_page(6);
         $this->template->build('index',$data);
     }

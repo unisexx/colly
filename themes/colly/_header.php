@@ -25,7 +25,37 @@
         <li class="<?php echo lang("topmenu03")?>"><a href="bnews">&nbsp;</a></li>
         <li class="<?php echo lang("topmenu04")?>"><a href="agents">&nbsp;</a></li>
         <li class="<?php echo lang("topmenu05")?>"><a href="albums">&nbsp;</a></li>
-        <li class="<?php echo lang("topmenu06")?>"><a href="reviews">&nbsp;</a></li>
+        <li id="have-sub" class="<?php echo lang("topmenu06")?>"><a href="reviews">&nbsp;</a>
+            <ul class="fixture-list" style="display:none;">
+                <div class="fixtures">
+                  <li class="submenu01"><a href="reviews/index?category=Colly collagen"></a></li>
+                  <li class="submenu02"><a href="reviews/index?category=Divoi concentrate serum"></a></li>   
+                </div>
+            </ul>
+        </li>
         <li class="<?php echo lang("topmenu07")?>"><a href="contacts">&nbsp;</a></li>
     </ul>
-</div>
+  </div>
+
+<script>
+$(document).ready(function(){
+    $('#topmenu li,.fixture-list').hover(
+        function () {
+            //show its submenu
+            $('.fixture-list', this).stop().slideDown(100);
+
+        }, 
+        function () {
+            //hide its submenu
+            $('.fixture-list', this).stop().slideUp(10);
+        }
+    );
+    
+    $('#have-sub').hover(function(){
+         $('ul.fixture-list').slideDown(50);        
+    },
+    function(){
+         $('ul.fixture-list').slideUp(50);          
+    });
+});
+</script>

@@ -43,6 +43,10 @@ $(function(){
         <th>เลือกไฟล์วิดีโอ :</th>
         <td><input class="full" type="text" name="media" value="<?php echo $review->media?>"/><input type="button" name="browse" value="เลือกไฟล์" onclick="browser($(this).prev(),'media')" /></td>
     </tr>
+    <tr>
+        <th>หมวดหมู่ :</th>
+        <td><?=form_dropdown('category',array('Colly collagen'=>'Colly collagen','Divoi concentrate serum'=>'Divoi concentrate serum'),$review->category,'');?></td>
+    </tr>
 	<!-- <tr>
         <th>รายละเอียด :</th>
         <td>
