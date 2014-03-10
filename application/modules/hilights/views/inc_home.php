@@ -18,7 +18,8 @@ $(document).ready(function(){
             <li>
                 <div>
                     <a href="<?=$hilight->url?>">
-                        <?php echo thumb("uploads/hilight/".$hilight->image,931,511,1)?>
+                        <?php // echo thumb("uploads/hilight/".$hilight->image,931,511,1)?>
+                        <img src="uploads/hilight/<?=$hilight->image?>" width="931" height="511">
                     </a>
                     <div class="clear"></div>
                 </div>
