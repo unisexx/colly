@@ -261,8 +261,21 @@ text-align:center; color:black; line-height:20px;height:120px;  border-top:1px s
 
 
 
+.menu-china{float:right; margin-right:40px; background: url(../images/menu-china.png) no-repeat; width:40px; height:14px;cursor:pointer;border:0; }
+.menu-china:hover{background: url(../images/menu-china-hot.png) no-repeat; width:40px; height:14px;cursor:pointer;border:0; }
+#contentchina ul { margin:0; padding-left:40px;}
+#contentchina ul li { list-style:none; margin:0; padding:0; line-height:25px;}
+.pad{padding-left:35px;}
+.vdo{margin:0 auto; width:740px; text-align:center;}
 
+#Album { width:100%; text-align:center; }
+#Album ul{list-style:none; margin-top:30px; margin-left:30px;  padding:0; float:left;}
+#Album ul li { position: relative; list-style:none; outline:4px solid #fccec5; border:1px solid white;  background:white; margin-right:30px; margin-bottom:30px;  width:220px; height:150px;
+display: inline-block; zoom: 1;*display: inline;}
 
+.clip_image {width: 30px;height: 61px;display: block; position: absolute; top: -5px;left: -2px; background: url(../images/paper-clip.png) no-repeat;}
+.btnVdo{float:right; margin-right:70px;margin-top:10px;background: url(../images/button-vdo1.png) no-repeat; width:188px; height:33px;cursor:pointer;border:0; }
+.btnVdo:hover{ background: url(../images/button-vdo1-hot.png) no-repeat; width:188px; height:33px;cursor:pointer;border:0; }
 /****************************************************************/
 
 

@@ -9,6 +9,7 @@
     <li <?php echo menu_active('agents','agents')?>><a href="agents/admin/agents">ตัวแทนจำหน่าย</a></li>
     <li <?php echo menu_active('albums','albums')?>><a href="albums/admin/albums">ภาพกิจกรรม</a></li>
     <li <?php echo menu_active('reviews','reviews')?>><a href="reviews/admin/reviews">รีวิวลูกค้า</a></li>
+    <li <?php echo menu_active('c_albums','c_albums')?>><a href="c_albums/admin/c_albums">ภาพกิจกรรม & วิดีโอ (จีน)</a></li>
     <!-- <li <?php echo menu_active('downloads','downloads')?>><a href="downloads/admin/downloads">ดาวน์โหลดเอกสาร</a></li>
     <li <?php echo menu_active('links','links')?>><a href="links/admin/links">ลิ้งค์ข้อความ</a></li>
     <li <?php echo menu_active('weblinks','weblinks')?>><a href="weblinks/admin/weblinks">ลิ้งค์รูปภาพ</a></li>

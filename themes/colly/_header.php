@@ -7,7 +7,7 @@
             <td width="5%"><a href="www.facebook.com" target="_blank"><img src="themes/colly/images/icon-fb.png" title="www.facebook.com" width="26" height="26" border="0"></a></td>
             <td width="22%"><img src="<?php echo lang("head_tel");?>" /></td>
             <td width="21%"><a href="mailto:info@collycollagen"><img src="themes/colly/images/e-mail.png" title="info@collycollagen" width="181" height="18" border="0"/></a></td>
-            <td width="45%">&nbsp;</td>
+            <td width="45%"><a href="c_albums"><div class="menu-china">&nbsp;</div></a></td>
             <td width="3%"><div class="flag_th"><a <?php echo lang("flag_th")?> href="home/lang/th">&nbsp;</a></div></td>
             <td width="3%"><div class="flag_eng"><a <?php echo lang("flag_en")?> href="home/lang/en">&nbsp;</a></div></td>
             <td width="3%"><div class="flag_chiness"><a <?php echo lang("flag_cn")?> href="home/lang/cn">&nbsp;</a></div></td>
